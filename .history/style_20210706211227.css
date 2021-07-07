@@ -1,0 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
+h2, h3, h4, .nav-item, #transition, footer{
+    text-align: center;
+}
+
+header{
+    background: url(./media/main.jpg) no-repeat 50% 50%;
+
+    height: 100vh;
+}

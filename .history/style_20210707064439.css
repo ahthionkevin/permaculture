@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+}
+
+h2, h3, h4, .nav-item, #transition, footer{
+    text-align: center;
+}
+
+header{
+    background: url(./media/main.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 5rem;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #abc5a9;
+    animation: titre ease 3.5s;
+}
+
+@keyframes titre {
+    0%{
+        opacity: 0;
+        transform: translate(0px,180px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+}
+
+
+/* *******************LEFT PART***************** */
+#leftPart{
+    background-color: #abc5a9;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.element{
+    padding: 70px 0;
+}
+
+.element img{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.element p{
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding: 20px;
+}
+.element .bouton{
+    text-align: right;
+    max-width: 15px 4% 0 0;
+}
+
+
+/* ***************RIGHT PART*********** */
+#rightPart{
+    background-color: #9b6833;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tips{
+    height: 200px;
+    margin: 20px auto;
+    transition: 0.4s ease-out;
+}
+
+.tips h4{
+    position: relative;
+    color: green;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 0  #8cf5a9,1px -1px 0  #8cf5a9,-1px 1px 0  #8cf5a9,-1px -1px 0  #8cf5a9,1px 0px 0  #8cf5a9,0px 1px 0  #8cf5a9;
+}
+
+.tips:hover{
+    opacity: 0.7;
+    transform: scale(110%);
+}
+
+
+#transition{
+    padding: 50px 0;
+}
+
+#transition img{
+    animation: rateau linear 8s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes rateau{
+    0% {
+      transform:  translate(0px,0px)  ;
+    }
+    7% {
+      transform:  translate(66px,1px)  ;
+    }
+    20% {
+      transform:  translate(2px,0px)  ;
+    }
+    31% {
+      transform:  translate(56px,1px)  ;
+    }
+    49% {
+      transform:  translate(-1px,3px)  ;
+    }
+    58% {
+      transform:  translate(69px,1px)  ;
+    }
+    74% {
+      transform:  translate(2px,3px)  ;
+    }
+    82% {
+      transform:  translate(81px,1px)  ;
+    }
+    100% {
+      transform:  translate(2px,5px)  ;
+    }
+  }
+  
+  #newsLetter{
+      background: url(./media/newsletter.jpeg) no-repeat 50% 50%;
+      background-size: cover;
+      width: 70%;
+      height: 370px;
+      min-width: 450px;
+      margin:0 auto;
+      border-radius: 50%;
+      margin-bottom: 70px;
+  }
+
+  #newsLetter h4{
+      padding: 100px 0 20px 0;
+      margin-top: 15px;
+      font-size: 2rem;
+  }
